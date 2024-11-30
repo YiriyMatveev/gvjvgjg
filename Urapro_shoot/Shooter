@@ -1,0 +1,16 @@
+from pygame import*
+from random import randint
+from time import time as time
+
+#Шрифти ти написи
+font.init()
+font1 = font.Font(None, 69)
+win = font1.render('YOU WILL LOSE NEXT TIME', True, (255, 255, 255))
+lose = font1.render('YOU WILL WIN NEXT TIME', True, (180, 0, 0))
+font2 = font.Font(None, 36)
+
+#music
+mixer.init()
+mixer.music.load('Space.ogg')
+mixer.music.play()
+fire_sound = mixer.Sound('Fire.ogg')
